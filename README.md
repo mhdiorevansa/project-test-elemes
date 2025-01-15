@@ -5,7 +5,7 @@ Kedua, install npm
 npm install
 ```
 
-Kedua, jalankan development server:
+Ketiga, jalankan development server:
 ```bash
 npm run dev
 # atau
