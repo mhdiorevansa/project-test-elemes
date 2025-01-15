@@ -3,7 +3,7 @@ import Image from "next/image";
 const Navbar = () => {
    return (
       <header>
-         <nav className="flex items-center justify-between">
+         <nav className="flex items-center justify-between relative z-10">
             <Image src={"/images/brand.png"} width={200} height={50} alt="brand-img"></Image>
             <ul className="flex gap-x-7 text-[#757575]">
                <li>Home</li>
