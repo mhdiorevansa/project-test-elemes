@@ -1,11 +1,17 @@
-Pertama, clone repository (git clone https://github.com/mhdiorevansa/project-test-elemes.git)
+Pertama, clone repository
+
+```bash
+git clone https://github.com/mhdiorevansa/project-test-elemes.git
+```
 
 Kedua, install npm
+
 ```bash
 npm install
 ```
 
 Ketiga, jalankan development server:
+
 ```bash
 npm run dev
 # atau
