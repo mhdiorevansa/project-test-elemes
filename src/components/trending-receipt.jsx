@@ -68,13 +68,13 @@ const TrendingReceiptSection = () => {
       }
    ];
    return (
-      <section className="md:px-24 px-10">
-         <h1 className="md:text-4xl text-3xl font-semibold mb-3">Browser Our Trending</h1>
-         <h2 className="md:text-4xl text-3xl font-semibold text-[#8BAC3E]">Receipt</h2>
-         <div className="grid md:grid-cols-4 gap-x-4 gap-y-6 my-12">
+      <section className="lg:px-24 px-6">
+         <h1 className="lg:text-4xl text-3xl font-semibold mb-3 text-[#333333]">Browser Our Trending</h1>
+         <h2 className="lg:text-4xl text-3xl font-semibold text-[#8BAC3E]">Receipt</h2>
+         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-x-4 gap-y-6 my-12">
             {trendingReceipt.map((item, index) => {
                return (
-                  <div className={`px-4 py-5 rounded-xl ${item.cardColor} shadow-sm`} key={index}>
+                  <div className={`px-4 py-5 rounded-xl ${item.cardColor} shadow-sm hover:bg-[url('/images/overlay-card-hover.png')] hover:bg-cover hover:bg-no-repeat hover:bg-center hover:inset-0`} key={index}>
                      <Image className="rounded-lg overflow-hidden w-[118px] h-[120px] object-cover" src={`${item.image}`} width={118} height={120} alt={`image ${item.name}`} />
                      <div className="mt-4 space-y-1">
                         <h3 className="text-xl font-semibold">{item.name}</h3>

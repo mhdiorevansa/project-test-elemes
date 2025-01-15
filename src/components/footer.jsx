@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const Footer = () => {
    return (
-      <footer className="px-24 py-7 md:block hidden">
-         <div className="mt-20 mb-16 grid grid-cols-4 gap-x-10 px-10 py-16 bg-[#F9FFF6] rounded-xl">
+      <footer className="lg:px-24 px-6 py-7 lg:block hidden">
+         <div className="mt-20 mb-16 grid grid-cols-4 gap-x-10 px-10 py-16 bg-[#F9FFF6] rounded-3xl">
             <div className="flex flex-col gap-y-5">
                <Image src={"/images/brand.png"} width={200} height={50} alt="brand-img" />
                <p className="text-[#757575]">Jl. Prof. DR. Satrio No.7, RT.3/RW.3, Karet Kuningan,
                   Kecamatan Setiabudi, Kota Jakarta Selatan,
                   Daerah Khusus Ibukota Jakarta 12950</p>
-               <div className="flex gap-x-2 mt-2">
+               <div className="flex gap-x-2">
                   <div className="relative hover:bg-[#8BAC3E] rounded-full p-2">
                      <svg width="22" height="22" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg" className="stroke-[#8BAC3E] hover:stroke-white">
                         <path d="M1.5 3.66675L8.075 8.05008C8.34888 8.23281 8.67075 8.33033 9 8.33033C9.32925 8.33033 9.65112 8.23281 9.925 8.05008L16.5 3.66675M3.16667 12.8334H14.8333C15.2754 12.8334 15.6993 12.6578 16.0118 12.3453C16.3244 12.0327 16.5 11.6088 16.5 11.1667V2.83341C16.5 2.39139 16.3244 1.96746 16.0118 1.6549C15.6993 1.34234 15.2754 1.16675 14.8333 1.16675H3.16667C2.72464 1.16675 2.30072 1.34234 1.98816 1.6549C1.67559 1.96746 1.5 2.39139 1.5 2.83341V11.1667C1.5 11.6088 1.67559 12.0327 1.98816 12.3453C2.30072 12.6578 2.72464 12.8334 3.16667 12.8334Z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

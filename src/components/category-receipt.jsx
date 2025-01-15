@@ -58,21 +58,21 @@ const CategoryReceiptSection = () => {
    };
 
    return (
-      <section className="md:ps-24">
-         <h1 className="md:text-4xl text-3xl font-semibold mb-3 ps-10 md:ps-0">Browser Our Category</h1>
-         <h2 className="md:text-4xl text-3xl font-semibold text-[#8BAC3E] ps-10 md:ps-0">Receipt</h2>
+      <section className="lg:ps-24">
+         <h1 className="lg:text-4xl text-3xl font-semibold mb-3 ps-6 lg:ps-0 text-[#333333]">Browser Our Category</h1>
+         <h2 className="lg:text-4xl text-3xl font-semibold text-[#8BAC3E] ps-6 lg:ps-0">Receipt</h2>
          <div className="flex flex-nowrap gap-x-3 my-12 overflow-x-auto snap-x snap-mandatory">
             {[...categoryReceipt, ...categoryReceipt].map((item, index) => (
-               <div className={`p-7 w-[228px] flex-shrink-0 h-auto rounded-lg ${item.cardColor} text-center flex flex-col justify-center items-center gap-y-3 snap-center`} key={index}>
+               <div className={`p-7 w-[228px] flex-shrink-0 h-[165px] rounded-lg ${item.cardColor} hover:h-[195px] hover:bg-[url('/images/overlay-card-hover.png')] hover:bg-cover hover:bg-no-repeat hover:bg-center hover:inset-0 text-center flex flex-col justify-center items-center gap-y-3 snap-center transition-all duration-300`} key={index}>
                   <Image src={item.icon} width={40} height={40} alt={`icon ${item.name}`}></Image>
-                  <div className="leading-relaxed">
-                     <p className="font-[500]">{item.name}</p>
+                  <div className="leading-relaxed text-[#333333]">
+                     <p className="font-semibold">{item.name}</p>
                      <p className="font-[400]">{item.qty} Items</p>
                   </div>
                </div>
             ))}
          </div>
-         <div className="md:flex gap-x-5 justify-end pe-24 hidden">
+         <div className="lg:flex gap-x-5 justify-end pe-24 hidden">
             <button className="bg-[#8BAC3E] text-white py-3 px-5 rounded-full relative flex items-center gap-x-2" onClick={() => scrollPrev()}>
                <div className="relative w-[35px] h-[35px] bg-white rounded-full text-black flex items-center justify-center p-3">
                   <svg width="13" height="19" viewBox="0 0 13 19" fill="none" xmlns="http://www.w3.org/2000/svg">
