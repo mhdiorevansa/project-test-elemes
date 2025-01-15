@@ -7,7 +7,7 @@ const TrendingReceiptSection = () => {
          name: "Pizza Paperoni",
          category: "Pizza",
          icon: "/images/star-4.png",
-         bgColor: "bg-[#E6F3F5]",
+         cardColor: "bg-[#E6F3F5]",
          image: "/images/pizza-paperoni.jpeg"
       },
       {
@@ -15,7 +15,7 @@ const TrendingReceiptSection = () => {
          name: "Pizza Meat",
          category: "Pizza",
          icon: "/images/star-3.png",
-         bgColor: "bg-[#E6F3F5]",
+         cardColor: "bg-[#E6F3F5]",
          image: "/images/pizza-meat.jpeg"
       },
       {
@@ -23,7 +23,7 @@ const TrendingReceiptSection = () => {
          name: "Doner Kebab",
          category: "Kebab",
          icon: "/images/star-5.png",
-         bgColor: "bg-[#EAEEFA]",
+         cardColor: "bg-[#EAEEFA]",
          image: "/images/doner-kebab.jpeg"
       },
       {
@@ -31,7 +31,7 @@ const TrendingReceiptSection = () => {
          name: "Salmon Roll",
          category: "Kebab",
          icon: "/images/star-4.png",
-         bgColor: "bg-[#F9EEF3]",
+         cardColor: "bg-[#F9EEF3]",
          image: "/images/salmon-role.jpeg"
       },
       {
@@ -39,7 +39,7 @@ const TrendingReceiptSection = () => {
          name: "Cupcake Choco",
          category: "Cupcake",
          icon: "/images/star-4.png",
-         bgColor: "bg-[#F0FEEB]",
+         cardColor: "bg-[#F0FEEB]",
          image: "/images/cupcake-choco.jpeg"
       },
       {
@@ -47,7 +47,7 @@ const TrendingReceiptSection = () => {
          name: "Doughnut Milk",
          category: "Doughnut",
          icon: "/images/star-5.png",
-         bgColor: "bg-[#F3F7D9]",
+         cardColor: "bg-[#F3F7D9]",
          image: "/images/doughnut-milk.jpeg"
       },
       {
@@ -55,7 +55,7 @@ const TrendingReceiptSection = () => {
          name: "Doughnut Unicorn",
          category: "Doughnut",
          icon: "/images/star-4.png",
-         bgColor: "bg-[#F3F7D9]",
+         cardColor: "bg-[#F3F7D9]",
          image: "/images/doughnut-unicorn.jpeg"
       },
       {
@@ -63,18 +63,18 @@ const TrendingReceiptSection = () => {
          name: "Kathi Kebab",
          category: "Kebab",
          icon: "/images/star-4.png",
-         bgColor: "bg-[#EAEEFA]",
+         cardColor: "bg-[#EAEEFA]",
          image: "/images/kathi-kebab.jpeg"
       }
    ];
    return (
-      <section>
-         <h1 className="text-4xl font-semibold leading-relaxed">Browser Our Trending</h1>
-         <h2 className="text-4xl font-semibold text-[#8BAC3E]">Receipt</h2>
-         <div className="grid grid-cols-4 gap-x-4 gap-y-6 my-12">
+      <section className="md:px-24 px-10">
+         <h1 className="md:text-4xl text-3xl font-semibold mb-3">Browser Our Trending</h1>
+         <h2 className="md:text-4xl text-3xl font-semibold text-[#8BAC3E]">Receipt</h2>
+         <div className="grid md:grid-cols-4 gap-x-4 gap-y-6 my-12">
             {trendingReceipt.map((item, index) => {
                return (
-                  <div className={`px-4 py-5 rounded-xl ${item.bgColor} shadow-sm`} key={index}>
+                  <div className={`px-4 py-5 rounded-xl ${item.cardColor} shadow-sm`} key={index}>
                      <Image className="rounded-lg overflow-hidden w-[118px] h-[120px] object-cover" src={`${item.image}`} width={118} height={120} alt={`image ${item.name}`} />
                      <div className="mt-4 space-y-1">
                         <h3 className="text-xl font-semibold">{item.name}</h3>
@@ -85,7 +85,7 @@ const TrendingReceiptSection = () => {
                )
             })}
          </div>
-         <div className="flex justify-center">
+         <div className="md:flex justify-center hidden">
             <button className="bg-[#8BAC3E] text-white py-2 px-5 rounded-full text-center">
                <span>ALL Receipt</span>
             </button>

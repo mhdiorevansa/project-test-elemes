@@ -1,18 +1,20 @@
 import CategoryReceiptSection from "@/components/category-receipt";
+import Footer from "@/components/footer";
 import HeroSection from "@/components/hero";
 import Navbar from "@/components/navbar";
 import TrendingReceiptSection from "@/components/trending-receipt";
 
 const Home = () => {
   return (
-    <section className="px-24 py-7">
+    <>
       <Navbar />
-      <main className="space-y-28">
+      <main className="md:space-y-28 space-y-16">
         <HeroSection />
         <CategoryReceiptSection />
         <TrendingReceiptSection />
       </main>
-    </section>
+      <Footer />
+    </>
   );
 }
 
